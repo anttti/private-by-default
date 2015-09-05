@@ -4,7 +4,7 @@
  * @version 1.0
  */
 /*
-Plugin Name: private-by-default
+Plugin Name: Private by Default
 Plugin URI: http://wordpress.org/extend/plugins/private-by-default/
 Description: Make all posts and pages private by default. Forked and fixed version of PrivatePostDefault.
 Author: Antti Mattila
@@ -36,7 +36,7 @@ function default_post_visibility() {
                 $('#post-visibility-display').text('<?php echo $visibility_trans; ?>');
                 $('#hidden-post-visibility').val('<?php echo $visibility; ?>');
                 $('#visibility-radio-<?php echo $visibility; ?>').attr('checked', true);
-            } catch() {}
+            } catch(e) {}
         })(jQuery);
     </script>
     <?php
